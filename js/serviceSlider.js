@@ -14,10 +14,10 @@ const selectServiceRadio = (element, id)  =>{
         let radio = serviceRadio.children[i];
         let slider = serviceSlider.children[i];
         radio.classList.remove('active');
-        slider.classList.replace('block','hidden');
+        slider.classList.replace('flex','hidden');
     }
     element.classList.add("active");
-    serviceSlider.children[id].classList.replace("hidden", "block");
+    serviceSlider.children[id].classList.replace("hidden", "flex");
 }
 
 serviceInit();
