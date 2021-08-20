@@ -314,6 +314,25 @@
   @apply transition duration-500 ease-in-out;
 }
 
+.steps-dot{
+  background: linear-gradient(
+    90deg,
+    rgba(254, 133, 98, 1) 0%,
+    rgba(226, 71, 136, 1) 50%,
+    rgba(222, 62, 142, 1) 100%
+  );
+  @apply w-8 h-8 rounded-full flex justify-center items-center text-white my-2;
+}
+
+.dashed-line{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 1px);
+  border-left: 2px dashed #C20772;
+}
+
 .check {
   width: 36px;
   height: 24px;
