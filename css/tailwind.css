@@ -454,7 +454,39 @@
   margin: 0 8px;
   border-radius: 50%;
   transition: 400ms;
+  @apply hidden lg:flex;
 }
 .desktop_dot_single.active {
+  background: #353767;
+}
+
+.desktop_reviews {
+  overflow: hidden;
+}
+.desktop_reviews_container {
+  position: relative;
+  height: 85vh;
+  transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
+}
+.desktop_reviews_slider {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+.desktop_review_dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.desktop_alone_dot {
+  background: #ccc;
+  height: 10px;
+  width: 10px;
+  margin: 0 8px;
+  border-radius: 50%;
+  transition: 400ms;
+  @apply hidden lg:block;
+}
+.desktop_alone_dot.active {
   background: #353767;
 }

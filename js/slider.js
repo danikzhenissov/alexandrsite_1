@@ -22,6 +22,12 @@ const nextBtn4 = document.querySelector(".next-btn");
 const prevBtn4 = document.querySelector(".prev-btn");
 const navigationDots4 = document.querySelector(".desktop_dots");
 
+const slideImage5 = document.querySelectorAll(".desktop_reviews_slider");
+const slidesContainer5 = document.querySelector(".desktop_reviews_container");
+const nextBtn5 = document.querySelector(".next-btn");
+const prevBtn5 = document.querySelector(".prev-btn");
+const navigationDots5 = document.querySelector(".desktop_review_dots");
+
 let numberOfImages1 = slideImage1.length;
 let slideWidth1 = slideImage1[0].clientWidth;
 let currentSlide1 = 0;
@@ -38,11 +44,16 @@ let numberOfImages4 = slideImage4.length;
 let slideWidth4 = slideImage4[0].clientWidth;
 let currentSlide4 = 0;
 
+let numberOfImages5 = slideImage5.length;
+let slideWidth5 = slideImage4[0].clientWidth;
+let currentSlide5 = 0;
+
 const init = () => {
   sliderInit(slideImage1);
   sliderInit(slideImage2);
   sliderInit(slideImage3);
   sliderInit(slideImage4);
+  sliderInit(slideImage5);
 
   createNavigationDots(
     numberOfImages1,
@@ -77,9 +88,18 @@ const init = () => {
     currentSlide4,
     navigationDots4,
     slidesContainer4,
-    slideImage3,
+    slideImage4,
     "desktop_dot_single",
     slideWidth4
+  );
+  createNavigationDots(
+    numberOfImages5,
+    currentSlide5,
+    navigationDots5,
+    slidesContainer5,
+    slideImage5,
+    "desktop_alone_dot",
+    slideWidth5
   );
 };
 
