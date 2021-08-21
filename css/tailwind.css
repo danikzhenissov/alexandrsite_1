@@ -4,13 +4,12 @@
 
 @font-face {
   font-family: SF_Pro_Display;
-  src: url("../assets/fonts/SF-Pro-Display-Regular.otf");
+  src: url("../assets/fonts/SF-Compact-Display-Medium.otf");
 }
 
 .sf_pro {
   font-family: SF_Pro_Display;
 }
-
 .hamburger {
   position: relative;
   display: block;
@@ -224,7 +223,9 @@
   );
 }
 .about__us__number {
-  @apply text-5xl text-biscay-500 pr-7 font-bold border-l-2 border-cerise-500 pl-1 mb-4;
+  height: max-content;
+  @apply text-5xl text-biscay-500 pr-7 font-bold border-l-2
+    border-cerise-500 pl-1 mb-4;
 }
 .about__us__text {
   @apply m-auto;
@@ -310,7 +311,7 @@
   @apply transition duration-500 ease-in-out;
 }
 
-.steps-dot{
+.steps-dot {
   background: linear-gradient(
     90deg,
     rgba(254, 133, 98, 1) 0%,
@@ -320,13 +321,13 @@
   @apply w-8 h-8 rounded-full flex justify-center items-center text-white my-2;
 }
 
-.dashed-line{
+.dashed-line {
   position: absolute;
   z-index: -1;
   top: 0;
   bottom: 0;
   left: calc(50% - 1px);
-  border-left: 2px dashed #C20772;
+  border-left: 2px dashed #c20772;
 }
 
 .check {
@@ -454,6 +455,11 @@
   }
 }
 
+.stages_back {
+  background-image: url(../img/both/stages_work_back.png);
+  background-size: cover;
+}
+
 .desktop_wrp {
   overflow: hidden;
 }
@@ -514,4 +520,9 @@
 }
 .desktop_alone_dot.active {
   background: #353767;
+}
+.underline {
+  text-decoration: none;
+  width: max-content;
+  @apply border-b-2 border-cerise-500;
 }

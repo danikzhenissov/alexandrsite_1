@@ -14,13 +14,21 @@
 
   <body class="sf_pro">
     <!-- ------------------------------- HEADER ------------------------------- -->
-    <header class="px-4 header">
+    <header class="px-4 header lg:px-0">
       <div class="flex justify-between pt-10 pb-7 lg:w-5/6 mx-auto">
         <h1 class="txt__base font-bold uppercase text-white pt-2">company</h1>
 
         <div class="hidden lg:flex flex-row w-1/2 justify-between">
-          <h1 class="txt__base font-bold uppercase text-white pt-2">company</h1>
-          <h1 class="txt__base font-bold uppercase text-white pt-2">company</h1>
+          <div>
+            <h1 class="txt__base font-bold text-white pt-2">email@email.com</h1>
+            <h2 class="text-base text-cloud-500">ПН-ПТ 10:00 - 19:00</h2>
+          </div>
+          <div>
+            <h1 class="txt__base font-bold uppercase text-white pt-2">
+              +7 (727) 000 00 00
+            </h1>
+            <a class="text-base text-cloud-500" href="#">Обратный звонок</a>
+          </div>
         </div>
         <div class="z-50">
           <button class="hamburger">
@@ -158,11 +166,12 @@
         </div>
       </div>
       <!-- ------------------------------- ABOUT ------------------------------- -->
-      <div class="about__us pt-40 px-4">
+      <div class="about__us px-4 lg:px-0">
         <div class="lg:w-5/6 lg:mx-auto">
-          <h1 class="uppercase text-biscay-500 font-bold txt__2xl">о нас</h1>
-          <div class="h-0.5 w-20 sm:w-28 bg-cerise-500 mb-6"></div>
-          <p class="txt__base text-dove-gray-500 lg:w-5/12">
+          <h1 class="underline uppercase text-biscay-500 font-bold txt__2xl">
+            о нас
+          </h1>
+          <p class="lg:pt-10 txt__base text-dove-gray-500 lg:w-5/12">
             Наша команда специализируется на разработке программного обеспечения
             и мобильных приложений, внедряем и интегрируем сложные системы для
             автоматизации бизнес процессов
@@ -172,14 +181,14 @@
       <!-- ------------------------------- ABOUT CONTENT ------------------------------- -->
       <div class="lg:flex lg:justify-between ipad_width lg:w-5/6 lg:mx-auto">
         <img
-          class="lg:w-1/2 lg:pt-10 lg:h-auto"
+          class="lg:w-1/2 lg:h-auto"
           src="./img/desktop/Мокап.png"
           alt="ipad"
         />
         <div class="lg:w-1/2 px-4 pb-11 lg:pt-16">
           <div class="lg:flex lg:justify-between">
             <div class="pr-3">
-              <div class="flex justify-between">
+              <div class="flex justify-between mb-16">
                 <h1 class="about__us__number">15</h1>
                 <p
                   class="
@@ -193,7 +202,7 @@
                   других стран мира
                 </p>
               </div>
-              <div class="flex justify-between">
+              <div class="flex justify-between mb-16">
                 <h1 class="about__us__number">13</h1>
                 <p
                   class="
@@ -207,7 +216,7 @@
                   технологий
                 </p>
               </div>
-              <div class="flex justify-between">
+              <div class="flex justify-between mb-16">
                 <h1 class="about__us__number">11</h1>
                 <p
                   class="
@@ -223,7 +232,7 @@
               </div>
             </div>
             <div>
-              <div class="flex justify-between">
+              <div class="flex justify-between mb-16">
                 <h1 class="about__us__number">1K</h1>
                 <p
                   class="
@@ -236,7 +245,7 @@
                   Выполненных проекта в корпоративном и коммерческом секторе
                 </p>
               </div>
-              <div class="flex justify-between">
+              <div class="flex justify-between mb-16">
                 <h1 class="about__us__number">40</h1>
                 <p
                   class="
@@ -278,24 +287,25 @@
       <div class="hidden lg:block pb-20 lg:w-5/6 lg:mx-auto">
         <h1 class="txt__base pb-3">Мы в соц. сетях</h1>
         <div class="flex flex-row object-cover">
-          <div class="pr-3">
-            <img src="./img/both/Instagram.png" alt="Instagram" />
-          </div>
-          <div class="pr-3">
-            <img src="./img/both/YouTube.png" alt="youtube" />
-          </div>
-          <div class="">
-            <img src="./img/both/Иконка.png" alt="facebook" />
-          </div>
+          <a class="pr-3" href="#"
+            ><img src="./img/both/Instagram.png" alt="Instagram"
+          /></a>
+
+          <a class="pr-3" href="#"
+            ><img src="./img/both/YouTube.png" alt="Instagram"
+          /></a>
+
+          <a href="#"><img src="./img/both/Иконка.png" alt="Instagram" /></a>
         </div>
       </div>
       <div class="px-4 lg:w-5/6 lg:mx-auto lg:px-0">
         <div class="">
-          <h1 class="uppercase txt__2xl text-biscay-500 font-bold">
+          <h1 class="underline uppercase txt__2xl text-biscay-500 font-bold">
             Наша команда
           </h1>
-          <div class="h-0.5 w-52 sm:w-64 bg-cerise-500 mb-6 mt-1"></div>
-          <p class="txt__base text-cloud-mine-shaft-500 mb-6 lg:w-5/12">
+          <p
+            class="lg:pt-10 txt__base text-cloud-mine-shaft-500 mb-6 lg:w-5/12"
+          >
             Сотрудников с опытом от 7 лет в разработке сложных систем и
             управлении крупными проектами
           </p>
@@ -306,8 +316,9 @@
         <div class="slides-container">
           <div class="slides pr-4 sm:pl-32 md:pl-40">
             <img src="./img/both/Фото.png" alt="photo" />
-            <h1 class="txt__2xl font-bold text-biscay-500 pt-8">Яров Сергей</h1>
-            <div class="h-0.5 w-36 sm:w-56 bg-cerise-500 mb-4 mt-1"></div>
+            <h1 class="underline txt__2xl font-bold text-biscay-500 pt-8">
+              Яров Сергей
+            </h1>
             <h2 class="txt__base text-mine-shaft-500 pb-6">
               Соучередитель (CEO)
             </h2>
@@ -317,8 +328,9 @@
           </div>
           <div class="slides pr-4 sm:pl-32 md:pl-40">
             <img src="./img/both/Фото-1.png" alt="photo" />
-            <h1 class="txt__2xl font-bold text-biscay-500 pt-8">Кравц Эдгар</h1>
-            <div class="h-0.5 w-36 sm:w-56 bg-cerise-500 mb-4 mt-1"></div>
+            <h1 class="underline txt__2xl font-bold text-biscay-500 pt-8">
+              Кравц Эдгар
+            </h1>
             <h2 class="txt__base text-mine-shaft-500 pb-6">
               СОУЧРЕДИТЕЛЬ (SOLUTION ARCHITECT)
             </h2>
@@ -329,8 +341,9 @@
           </div>
           <div class="slides pr-4 sm:pl-32 md:pl-40">
             <img src="./img/both/Фото-2.png" alt="photo" />
-            <h1 class="txt__2xl font-bold text-biscay-500 pt-8">Кравц Эдгар</h1>
-            <div class="h-0.5 w-36 sm:w-56 bg-cerise-500 mb-4 mt-1"></div>
+            <h1 class="underline txt__2xl font-bold text-biscay-500 pt-8">
+              Кравц Эдгар
+            </h1>
             <h2 class="txt__base text-mine-shaft-500 pb-6">
               ТЕХНИЧЕСКИЙ ДИРЕКТОР (CTO)
             </h2>
@@ -341,10 +354,9 @@
           </div>
           <div class="slides pr-4 sm:pl-32 md:pl-40">
             <img src="./img/both/Фото-3.png" alt="photo" />
-            <h1 class="txt__2xl font-bold text-biscay-500 pt-8">
+            <h1 class="underline txt__2xl font-bold text-biscay-500 pt-8">
               Измайлов Малик
             </h1>
-            <div class="h-0.5 w-52 sm:w-80 bg-cerise-500 mb-4 mt-1"></div>
             <h2 class="txt__base text-mine-shaft-500 pb-6">
               РУКОВОДИТЕЛЬ ПРОЕКТОВ (PM)
             </h2>
@@ -359,18 +371,24 @@
       <div class="hidden lg:flex lg:justify-between lg:w-5/6 lg:mx-auto">
         <div class="mr-6 w-full">
           <img class="mb-6" src="./img/both/Фото.png" alt="" />
-          <h1 class="text-lg text-biscay-500 font-bold">Яров Сергей</h1>
-          <div class="h-0.5 w-14 sm:w-28 bg-cerise-500 mb-6"></div>
-          <h2 class="mb-6 text-dove-gray-500 text-base">СОУЧРЕДИТЕЛЬ (CEO)</h2>
+          <h1 class="underline text-lg text-biscay-500 font-bold">
+            Яров Сергей
+          </h1>
+
+          <h2 class="lg:pt-5 mb-6 text-dove-gray-500 text-base">
+            СОУЧРЕДИТЕЛЬ (CEO)
+          </h2>
           <p class="text-dove-gray-500 text-base">
             Один из создателей электронного правительства (EGOV) в Казахстане
           </p>
         </div>
         <div class="mr-6 w-full">
           <img class="mb-6" src="./img/both/Фото-1.png" alt="" />
-          <h1 class="text-lg text-biscay-500 font-bold">Кравц Эдгар</h1>
-          <div class="h-0.5 w-14 sm:w-28 bg-cerise-500 mb-6"></div>
-          <h2 class="mb-6 text-dove-gray-500 text-base">
+          <h1 class="underline text-lg text-biscay-500 font-bold">
+            Кравц Эдгар
+          </h1>
+
+          <h2 class="lg:pt-5 mb-6 text-dove-gray-500 text-base">
             СОУЧРЕДИТЕЛЬ (SOLUTION ARCHITECT)
           </h2>
           <p class="text-dove-gray-500 text-base">
@@ -380,9 +398,10 @@
         </div>
         <div class="mr-6 w-full">
           <img class="mb-6" src="./img/both/Фото-2.png" alt="" />
-          <h1 class="text-lg text-biscay-500 font-bold">Кравц Эдгар</h1>
-          <div class="h-0.5 w-14 sm:w-28 bg-cerise-500 mb-6"></div>
-          <h2 class="mb-6 text-dove-gray-500 text-base">
+          <h1 class="underline text-lg text-biscay-500 font-bold">
+            Кравц Эдгар
+          </h1>
+          <h2 class="lg:pt-5 mb-6 text-dove-gray-500 text-base">
             ТЕХНИЧЕСКИЙ ДИРЕКТОР (CTO)
           </h2>
           <p class="text-dove-gray-500 text-base">
@@ -392,9 +411,10 @@
         </div>
         <div class="w-full">
           <img class="mb-6" src="./img/both/Фото-3.png" alt="" />
-          <h1 class="text-lg text-biscay-500 font-bold">Измайлов Малик</h1>
-          <div class="h-0.5 w-20 sm:w-36 bg-cerise-500 mb-6"></div>
-          <h2 class="mb-6 text-dove-gray-500 text-base">
+          <h1 class="underline text-lg text-biscay-500 font-bold">
+            Измайлов Малик
+          </h1>
+          <h2 class="lg:pt-5 mb-6 text-dove-gray-500 text-base">
             РУКОВОДИТЕЛЬ ПРОЕКТОВ (PM)
           </h2>
           <p class="text-dove-gray-500 text-base">
@@ -412,13 +432,12 @@
       </div>
       <!-- ------------------------------- OUR SERVICES ------------------------------- -->
 
-      <div class="lg:w-4/5 mx-auto mb-16">
-        <div class="px-4 mb-7">
-          <h1 class="uppercase txt__2xl text-biscay-500 font-bold">
+      <div class="lg:w-5/6 mx-auto mb-16">
+        <div class="px-4 lg:px-0 mb-7">
+          <h1 class="underline uppercase txt__2xl text-biscay-500 font-bold">
             Наши услуги
           </h1>
-          <div class="h-0.5 w-44 sm:w-64 bg-cerise-500 mb-6 mt-1"></div>
-          <p class="txt__base text-mine-shaft-500">
+          <p class="lg:pt-10 txt__base text-mine-shaft-500">
             Полный цикл создания проектовот концепции до запуска
           </p>
         </div>
@@ -463,7 +482,7 @@
                 py-3
               "
             >
-              <img src="./img/both/Градиент-3.png" alt="" />
+              <img src="./img/both/Градиент.png" alt="" />
               <h1 class="font-bold txt__sm self-center">ИНТЕГРАЦИЯ</h1>
               <div class="radio-dot">
                 <div class="radio-dot-inside"></div>
@@ -479,7 +498,7 @@
                 py-3
               "
             >
-              <img src="./img/both/Градиент-3.png" alt="" />
+              <img src="./img/both/Градиент-1.png" alt="" />
               <h1 class="font-bold txt__sm self-center">
                 АВТОМАТИЗАЦИЯ<br />
                 БИЗНЕС-ПРОЦЕССОВ
@@ -498,7 +517,7 @@
                 py-3
               "
             >
-              <img src="./img/both/Градиент-3.png" alt="" />
+              <img src="./img/both/Градиент-2.png" alt="" />
               <h1 class="font-bold txt__sm self-center">WEB ПОРТАЛЫ</h1>
               <div class="radio-dot">
                 <div class="radio-dot-inside"></div>
@@ -532,7 +551,7 @@
                 py-3
               "
             >
-              <img src="./img/both/Градиент-3.png" alt="" />
+              <img src="./img/both/Градиент-4.png" alt="" />
               <h1 class="font-bold txt__sm self-center">ВРМ СИСТЕМЫ</h1>
               <div class="radio-dot">
                 <div class="radio-dot-inside"></div>
@@ -605,7 +624,7 @@
                 <!--IMAGE  -->
                 <img
                   class="w-auto"
-                  src="./img/photo_2021-08-21_00-20-50.jpg"
+                  src="./img/desktop/нашиуслуги1.png"
                   alt=""
                   srcset=""
                 />
@@ -615,40 +634,44 @@
             <div class="service-slider-item hidden">
               <div class="md:w-1/2">
                 <div class="px-6">
-                  <h1 class="txt__sm text-biscay-500 font-bold pb-4">
-                    МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+                  <h1 class="uppercase txt__sm text-biscay-500 font-bold pb-4">
+                    Соберём единую IT–инфраструктуру
                   </h1>
                   <p class="txt__sm text-mine-shaft-500 pb-6">
-                    С удобным интерфейсом на платформах iOS, Android и Windows
-                    Phone
+                    Реализуем интеграцию между существующими разнородными
+                    системами компании
                   </p>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
-                  <h1 class="txt__sm text-mine-shaft-500">Мобильный банкинг</h1>
+                  <h1 class="txt__sm text-mine-shaft-500">
+                    Получение данных для интеграции любых форматов и протоколов
+                  </h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Дисконтные системы
+                    Консультация по вопросам интеграции ИС
                   </h1>
                 </div>
                 <div class="flex px-6 pb-3">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Мобильные клиенты информационных систем
+                    Консультация по выбору методов и платформы для решения
+                    поставленных интеграционных задач
                   </h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Корпоративные приложения
+                    Проектирование надежных, масштабируемых и отказоустойчивых
+                    интеграционных решений
                   </h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    и еще 18 видов мобильных приложений
+                    и еще 10 направлений
                   </h1>
                 </div>
                 <button
@@ -673,7 +696,7 @@
                 <!--IMAGE  -->
                 <img
                   class="w-auto"
-                  src="./img/photo_2021-08-21_00-20-50.jpg"
+                  src="./img/desktop/нашиуслуги2.png"
                   alt=""
                   srcset=""
                 />
@@ -683,40 +706,44 @@
             <div class="service-slider-item hidden">
               <div class="md:w-1/2">
                 <div class="px-6">
-                  <h1 class="txt__sm text-biscay-500 font-bold pb-4">
-                    МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+                  <h1 class="txt__sm uppercase text-biscay-500 font-bold pb-4">
+                    Поможем навести порядок в бизнесе и увеличить прибыль
                   </h1>
                   <p class="txt__sm text-mine-shaft-500 pb-6">
-                    С удобным интерфейсом на платформах iOS, Android и Windows
-                    Phone
+                    Вы получите автоматизацию всех процессов с реально
+                    работающими на результат сотрудниками
                   </p>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
-                  <h1 class="txt__sm text-mine-shaft-500">Мобильный банкинг</h1>
+                  <h1 class="txt__sm text-mine-shaft-500">
+                    Формирование структуры Вашей организации
+                  </h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Дисконтные системы
+                    Описание всех бизнес-процессов
                   </h1>
                 </div>
                 <div class="flex px-6 pb-3">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Мобильные клиенты информационных систем
+                    Определение ключевых показателей всех процессов
                   </h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Корпоративные приложения
+                    Формирование целей и стратегии достижения
                   </h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    и еще 18 видов мобильных приложений
+                    Автоматизация бизнес-процессов, и, как следствие, достижение
+                    целей путём автоматического отслеживания ключевых
+                    показателей — KPI
                   </h1>
                 </div>
                 <button
@@ -741,7 +768,7 @@
                 <!--IMAGE  -->
                 <img
                   class="w-auto"
-                  src="./img/photo_2021-08-21_00-20-50.jpg"
+                  src="./img/desktop/нашиуслуги3.png"
                   alt=""
                   srcset=""
                 />
@@ -752,39 +779,33 @@
               <div class="md:w-1/2">
                 <div class="px-6">
                   <h1 class="txt__sm text-biscay-500 font-bold pb-4">
-                    МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+                    Разработаем web-портал любого масштаба – от маркетплейса до
+                    аукциона
                   </h1>
                   <p class="txt__sm text-mine-shaft-500 pb-6">
-                    С удобным интерфейсом на платформах iOS, Android и Windows
-                    Phone
+                    Вы получите интерфейс на платформах iOS, Android
                   </p>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
-                  <h1 class="txt__sm text-mine-shaft-500">Мобильный банкинг</h1>
+                  <h1 class="txt__sm text-mine-shaft-500">Интернет-магазины</h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
-                  <h1 class="txt__sm text-mine-shaft-500">
-                    Дисконтные системы
-                  </h1>
+                  <h1 class="txt__sm text-mine-shaft-500">Торговые площадки</h1>
                 </div>
                 <div class="flex px-6 pb-3">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
-                  <h1 class="txt__sm text-mine-shaft-500">
-                    Мобильные клиенты информационных систем
-                  </h1>
+                  <h1 class="txt__sm text-mine-shaft-500">Маркетплейсы</h1>
+                </div>
+                <div class="flex px-6 pb-4">
+                  <img class="check pr-3" src="./img/both/Check.png" alt="" />
+                  <h1 class="txt__sm text-mine-shaft-500">Аукционы</h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Корпоративные приложения
-                  </h1>
-                </div>
-                <div class="flex px-6 pb-4">
-                  <img class="check pr-3" src="./img/both/Check.png" alt="" />
-                  <h1 class="txt__sm text-mine-shaft-500">
-                    и еще 18 видов мобильных приложений
+                    И еще 7 видов порталов
                   </h1>
                 </div>
                 <button
@@ -809,7 +830,7 @@
                 <!--IMAGE  -->
                 <img
                   class="w-auto"
-                  src="./img/photo_2021-08-21_00-20-50.jpg"
+                  src="./img/desktop/нашиуслуги4.png"
                   alt=""
                   srcset=""
                 />
@@ -820,39 +841,37 @@
               <div class="md:w-1/2">
                 <div class="px-6">
                   <h1 class="txt__sm text-biscay-500 font-bold pb-4">
-                    МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+                    Корпоративные web-системы
                   </h1>
                   <p class="txt__sm text-mine-shaft-500 pb-6">
-                    С удобным интерфейсом на платформах iOS, Android и Windows
-                    Phone
+                    Выдерживает большую нагрузку и поддерживает от 10 до 100 000
+                    пользователей одновременно
                   </p>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
-                  <h1 class="txt__sm text-mine-shaft-500">Мобильный банкинг</h1>
+                  <h1 class="txt__sm text-mine-shaft-500">Контакт-центры</h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
-                  <h1 class="txt__sm text-mine-shaft-500">
-                    Дисконтные системы
-                  </h1>
+                  <h1 class="txt__sm text-mine-shaft-500">CRM</h1>
                 </div>
                 <div class="flex px-6 pb-3">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Мобильные клиенты информационных систем
+                    Системы контроля доступа
                   </h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Корпоративные приложения
+                    BI-системы для отображения аналитики
                   </h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    и еще 18 видов мобильных приложений
+                    И еще 46 видов корпоративных систем
                   </h1>
                 </div>
                 <button
@@ -877,7 +896,7 @@
                 <!--IMAGE  -->
                 <img
                   class="w-auto"
-                  src="./img/photo_2021-08-21_00-20-50.jpg"
+                  src="./img/desktop/нашиуслуги5.png"
                   alt=""
                   srcset=""
                 />
@@ -888,39 +907,41 @@
               <div class="md:w-1/2">
                 <div class="px-6">
                   <h1 class="txt__sm text-biscay-500 font-bold pb-4">
-                    МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+                    Гибкая настройка интерфейса и бизнес-процессов
                   </h1>
                   <p class="txt__sm text-mine-shaft-500 pb-6">
-                    С удобным интерфейсом на платформах iOS, Android и Windows
-                    Phone
+                    Позволяет настроить систему под решение конкретных задач
                   </p>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
-                  <h1 class="txt__sm text-mine-shaft-500">Мобильный банкинг</h1>
+                  <h1 class="txt__sm text-mine-shaft-500">
+                    Автоматизация бизнес-процессов без программирования
+                  </h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Дисконтные системы
+                    Самостоятельная прорисовка интерфейсов системы
                   </h1>
                 </div>
                 <div class="flex px-6 pb-3">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Мобильные клиенты информационных систем
+                    Изменение логики обработки процессов «на лету»
                   </h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    Корпоративные приложения
+                    Мониторинг исполнения бизнес-процессов
                   </h1>
                 </div>
                 <div class="flex px-6 pb-4">
                   <img class="check pr-3" src="./img/both/Check.png" alt="" />
                   <h1 class="txt__sm text-mine-shaft-500">
-                    и еще 18 видов мобильных приложений
+                    И еще 28 задач, которые можно самостоятельно решить с
+                    помощью BPM
                   </h1>
                 </div>
                 <button
@@ -945,7 +966,7 @@
                 <!--IMAGE  -->
                 <img
                   class="w-auto"
-                  src="./img/photo_2021-08-21_00-20-50.jpg"
+                  src="./img/desktop/нашиуслуги6.png"
                   alt=""
                   srcset=""
                 />
@@ -956,10 +977,9 @@
       </div>
       <!-- ------------------------------- SOFTWARE BOX ------------------------------- -->
       <div class="software__box px-4 lg:hidden">
-        <h1 class="txt__2xl text-biscay-500 font-bold">
+        <h1 class="underline txt__2xl text-biscay-500 font-bold">
           Готовое решение Software Box
         </h1>
-        <div class="h-0.5 w-80 sm:w-1/2 bg-cerise-500 mb-6 mt-1"></div>
         <p class="txt__base text-mine-shaft-500 pb-7">
           Автоматизация финансовых бизнес процессов
         </p>
@@ -1076,13 +1096,13 @@
         </button>
       </div>
       <div class="hidden lg:block lg:w-5/6 lg:mx-auto">
-        <h1 class="text-3xl text-biscay-500 font-bold">
+        <h1 class="underline text-3xl text-biscay-500 font-bold">
           Готовое решение Software Box
         </h1>
-        <div class="h-0.5 w-80 sm:w-96 bg-cerise-500 mb-6 mt-1"></div>
-        <p class="text-lg text-mine-shaft-500">
+        <p class="lg:pt-10 text-lg text-mine-shaft-500 mb-16">
           Автоматизация финансовых бизнес процессов
         </p>
+
         <div class="flex">
           <div class="self-center">
             <div class="flex mb-8">
@@ -1414,10 +1434,10 @@
                   </div>
                 </div>
               </div>
-              <div class="w-1/2">
+              <div class="w-1/2 flex items-center">
                 <img
-                  class="h-5/6 xl:mt-20"
-                  src="./img/desktop/Mockup.png"
+                  class="h-auto xl:mt-20"
+                  src="./img/desktop/iphone_buble.png"
                   alt="iphone"
                 />
               </div>
@@ -1503,10 +1523,10 @@
                   </div>
                 </div>
               </div>
-              <div class="w-1/2 flex justify-center pt-5 pl-5">
+              <div class="w-1/2 flex items-center pt-5 pl-5">
                 <img
-                  class="h-5/6 xl:mt-20"
-                  src="./img/desktop/tablet.png"
+                  class="h-auto xl:mt-20"
+                  src="./img/desktop/ipad_buble.png"
                   alt="ipad"
                 />
               </div>
@@ -1523,187 +1543,151 @@
         />
       </div>
       <!-- ------------------------------- STAGES OF WORK ------------------------------- -->
-      <div class="lg:w-4/5 px-4 mx-auto">
-        <h1 class="txt__2xl text-biscay-500 font-bold">Этапы работы</h1>
-        <div class="h-0.5 w-40 sm:w-64 bg-cerise-500 mb-6 mt-1"></div>
-        <p class="txt__base text-mine-shaft-500">
+      <div class="lg:w-5/6 px-4 mx-auto stages_back lg:pb-7">
+        <h1 class="underline txt__2xl text-biscay-500 font-bold">
+          Этапы работы
+        </h1>
+        <p class="lg:pt-10 txt__base text-mine-shaft-500">
           При реализации мы подключим Вас к нашей внутренней системе, что
           позволит всегда быть в курсе разработки
         </p>
         <div class="my-8 flex flex-col">
-              <div class="flex justify-center h-max">
-                <!-- 1 -->
-                <div class="lg:w-80 mx-5 hidden lg:block lg:order-3">
-                </div>
-                <div class="order-1 lg:order-2">
-                  <div class="steps-dot">1</div>
-                  <div class="relative w-8 h-16" ><div class="dashed-line"></div></div>
-                </div>
-                <div class="w-80 mx-5 pt-4 order-2 lg:order-1 lg:text-right">
-                  <h1
-                  class="
-                    txt__base
-                    text-biscay-500
-                    font-bold
-                  "
-                  >
-                    Предсказуемый результат
-                  </h1>
-                  <p class="txt__sm text-mine-shaft-500">
-                    Суммарный опыт наших разработчиков более 150 лет. Это
-                    позволяет реализовывать решения для всех сфер и любого
-                  </p>
-                </div>
+          <div class="flex justify-center h-max">
+            <!-- 1 -->
+            <div class="lg:w-80 mx-5 hidden lg:block lg:order-3"></div>
+            <div class="order-1 lg:order-2">
+              <div class="steps-dot">1</div>
+              <div class="relative w-8 h-16">
+                <div class="dashed-line"></div>
               </div>
-              <!-- 2 -->
-              <div class="flex justify-center h-max">
-                <div class="lg:w-80 lg:mx-5 order-1">
-                </div>
-                <div class="order-1 lg:order-2">
-                  <div class="steps-dot">2</div>
-                  <div class="relative w-8 h-16" ><div class="dashed-line"></div></div>
-                </div>
-                <div class="w-80 mx-5 pt-4 order-3">
-                  <!-- IF -->
-                  <h1
-                  class="
-                    txt__base
-                    text-biscay-500
-                    font-bold
-                  "
-                  >
-                    Предсказуемый результат
-                  </h1>
-                  <p class="txt__sm text-mine-shaft-500">
-                    Суммарный опыт наших разработчиков более 150 лет. Это
-                    позволяет реализовывать решения для всех сфер и любого
-                  </p>
-                </div>
+            </div>
+            <div class="w-80 mx-5 pt-4 order-2 lg:order-1 lg:text-right">
+              <h1 class="txt__base text-biscay-500 font-bold">
+                Предсказуемый результат
+              </h1>
+              <p class="txt__sm text-mine-shaft-500">
+                Суммарный опыт наших разработчиков более 150 лет. Это позволяет
+                реализовывать решения для всех сфер и любого
+              </p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="flex justify-center h-max">
+            <div class="lg:w-80 lg:mx-5 order-1"></div>
+            <div class="order-1 lg:order-2">
+              <div class="steps-dot">2</div>
+              <div class="relative w-8 h-16">
+                <div class="dashed-line"></div>
               </div>
-              <!-- 3 -->
-              <div class="flex justify-center h-max">
-                <div class="lg:w-80 mx-5 hidden lg:block lg:order-3">
-                </div>
-                <div class="order-1 lg:order-2">
-                  <div class="steps-dot">3</div>
-                  <div class="relative w-8 h-16" ><div class="dashed-line"></div></div>
-                </div>
-                <div class="w-80 mx-5 pt-4 order-2 lg:order-1 lg:text-right">
-                  <!-- IF -->
-                  <h1
-                  class="
-                    txt__base
-                    text-biscay-500
-                    font-bold
-                  "
-                  >
-                    Предсказуемый результат
-                  </h1>
-                  <p class="txt__sm text-mine-shaft-500">
-                    Суммарный опыт наших разработчиков более 150 лет. Это
-                    позволяет реализовывать решения для всех сфер и любого
-                  </p>
-                </div>
+            </div>
+            <div class="w-80 mx-5 pt-4 order-3">
+              <!-- IF -->
+              <h1 class="txt__base text-biscay-500 font-bold">
+                Предсказуемый результат
+              </h1>
+              <p class="txt__sm text-mine-shaft-500">
+                Суммарный опыт наших разработчиков более 150 лет. Это позволяет
+                реализовывать решения для всех сфер и любого
+              </p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="flex justify-center h-max">
+            <div class="lg:w-80 mx-5 hidden lg:block lg:order-3"></div>
+            <div class="order-1 lg:order-2">
+              <div class="steps-dot">3</div>
+              <div class="relative w-8 h-16">
+                <div class="dashed-line"></div>
               </div>
-              <!-- 4 -->
-              <div class="flex justify-center h-max">
-                <div class="lg:w-80 lg:mx-5 order-1">
-                </div>
-                <div class="order-1 lg:order-2">
-                  <div class="steps-dot">4</div>
-                  <div class="relative w-8 h-16" ><div class="dashed-line"></div></div>
-                </div>
-                <div class="w-80 mx-5 pt-4 order-3">
-                  <!-- IF -->
-                  <h1
-                  class="
-                    txt__base
-                    text-biscay-500
-                    font-bold
-                  "
-                  >
-                    Предсказуемый результат
-                  </h1>
-                  <p class="txt__sm text-mine-shaft-500">
-                    Суммарный опыт наших разработчиков более 150 лет. Это
-                    позволяет реализовывать решения для всех сфер и любого
-                  </p>
-                </div>
+            </div>
+            <div class="w-80 mx-5 pt-4 order-2 lg:order-1 lg:text-right">
+              <!-- IF -->
+              <h1 class="txt__base text-biscay-500 font-bold">
+                Предсказуемый результат
+              </h1>
+              <p class="txt__sm text-mine-shaft-500">
+                Суммарный опыт наших разработчиков более 150 лет. Это позволяет
+                реализовывать решения для всех сфер и любого
+              </p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="flex justify-center h-max">
+            <div class="lg:w-80 lg:mx-5 order-1"></div>
+            <div class="order-1 lg:order-2">
+              <div class="steps-dot">4</div>
+              <div class="relative w-8 h-16">
+                <div class="dashed-line"></div>
               </div>
-              <!-- 5 -->
-              <div class="flex justify-center h-max">
-                <div class="lg:w-80 mx-5 hidden lg:block lg:order-3">
-                </div>
-                <div class="order-1 lg:order-2">
-                  <div class="steps-dot">5</div>
-                  <div class="relative w-8 h-16" ><div class="dashed-line"></div></div>
-                </div>
-                <div class="w-80 mx-5 pt-4 order-2 lg:order-1 lg:text-right">
-                  <!-- IF -->
-                  <h1
-                  class="
-                    txt__base
-                    text-biscay-500
-                    font-bold
-                  "
-                  >
-                    Предсказуемый результат
-                  </h1>
-                  <p class="txt__sm text-mine-shaft-500">
-                    Суммарный опыт наших разработчиков более 150 лет. Это
-                    позволяет реализовывать решения для всех сфер и любого
-                  </p>
-                </div>
+            </div>
+            <div class="w-80 mx-5 pt-4 order-3">
+              <!-- IF -->
+              <h1 class="txt__base text-biscay-500 font-bold">
+                Предсказуемый результат
+              </h1>
+              <p class="txt__sm text-mine-shaft-500">
+                Суммарный опыт наших разработчиков более 150 лет. Это позволяет
+                реализовывать решения для всех сфер и любого
+              </p>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="flex justify-center h-max">
+            <div class="lg:w-80 mx-5 hidden lg:block lg:order-3"></div>
+            <div class="order-1 lg:order-2">
+              <div class="steps-dot">5</div>
+              <div class="relative w-8 h-16">
+                <div class="dashed-line"></div>
               </div>
-              <!-- 6 -->
-              <div class="flex justify-center h-max">
-                <div class="lg:w-80 lg:mx-5 order-1">
-                </div>
-                <div class="order-1 lg:order-2">
-                  <div class="steps-dot">6</div>
-                  <div class="relative w-8 h-16" ><div class="dashed-line"></div></div>
-                </div>
-                <div class="w-80 mx-5 pt-4 order-3">
-                  <!-- IF -->
-                  <h1
-                  class="
-                    txt__base
-                    text-biscay-500
-                    font-bold
-                  "
-                  >
-                    Предсказуемый результат
-                  </h1>
-                  <p class="txt__sm text-mine-shaft-500">
-                    Суммарный опыт наших разработчиков более 150 лет. Это
-                    позволяет реализовывать решения для всех сфер и любого
-                  </p>
-                </div>
+            </div>
+            <div class="w-80 mx-5 pt-4 order-2 lg:order-1 lg:text-right">
+              <!-- IF -->
+              <h1 class="txt__base text-biscay-500 font-bold">
+                Предсказуемый результат
+              </h1>
+              <p class="txt__sm text-mine-shaft-500">
+                Суммарный опыт наших разработчиков более 150 лет. Это позволяет
+                реализовывать решения для всех сфер и любого
+              </p>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="flex justify-center h-max">
+            <div class="lg:w-80 lg:mx-5 order-1"></div>
+            <div class="order-1 lg:order-2">
+              <div class="steps-dot">6</div>
+              <div class="relative w-8 h-16">
+                <div class="dashed-line"></div>
               </div>
-              <!-- 7 -->
-              <div class="flex justify-center h-max">
-                <div class="lg:w-80 mx-5 hidden lg:block lg:order-3">
-                </div>
-                <div class="order-1 lg:order-2">
-                  <div class="steps-dot">7</div>
-                </div>
-                <div class="w-80 mx-5 pt-4 order-2 lg:order-1 lg:text-right">
-                  <!-- IF -->
-                  <h1
-                  class="
-                    txt__base
-                    text-biscay-500
-                    font-bold
-                  "
-                  >
-                    Предсказуемый результат
-                  </h1>
-                  <p class="txt__sm text-mine-shaft-500">
-                    Суммарный опыт наших разработчиков более 150 лет. Это
-                    позволяет реализовывать решения для всех сфер и любого
-                  </p>
-                </div>
-              </div>
+            </div>
+            <div class="w-80 mx-5 pt-4 order-3">
+              <!-- IF -->
+              <h1 class="txt__base text-biscay-500 font-bold">
+                Предсказуемый результат
+              </h1>
+              <p class="txt__sm text-mine-shaft-500">
+                Суммарный опыт наших разработчиков более 150 лет. Это позволяет
+                реализовывать решения для всех сфер и любого
+              </p>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="flex justify-center h-max">
+            <div class="lg:w-80 mx-5 hidden lg:block lg:order-3"></div>
+            <div class="order-1 lg:order-2">
+              <div class="steps-dot">7</div>
+            </div>
+            <div class="w-80 mx-5 pt-4 order-2 lg:order-1 lg:text-right">
+              <!-- IF -->
+              <h1 class="txt__base text-biscay-500 font-bold">
+                Предсказуемый результат
+              </h1>
+              <p class="txt__sm text-mine-shaft-500">
+                Суммарный опыт наших разработчиков более 150 лет. Это позволяет
+                реализовывать решения для всех сфер и любого
+              </p>
+            </div>
+          </div>
         </div>
         <button
           class="
@@ -1723,11 +1707,10 @@
       </div>
       <!-- ------------------------------- OUR GUARANTEES ------------------------------- -->
       <div class="mt-28 px-4 lg:w-5/6 lg:mx-auto">
-        <h1 class="uppercase font-bold text-biscay-500 txt__2xl">
+        <h1 class="underline uppercase font-bold text-biscay-500 txt__2xl">
           Наши Гарантии
         </h1>
-        <div class="h-0.5 w-52 sm:w-64 bg-cerise-500 mb-6 mt-1"></div>
-        <p class="txt__base text-mine-shaft-500 mb-24">
+        <p class="lg:pt-10 txt__base text-mine-shaft-500 mb-24">
           На протяжении всего времени сотрудничества
         </p>
 
@@ -1907,9 +1890,10 @@
       </div>
       <!-- ------------------------------- REVIEWS SLIDER ------------------------------- -->
       <div class="px-4 lg:w-5/6 lg:mx-auto lg:px-0">
-        <h1 class="txt__2xl text-biscay-500 font-bold">Клиенты о нас</h1>
-        <div class="h-0.5 w-44 sm:w-64 bg-cerise-500 mb-6 mt-1"></div>
-        <p class="txt__base to-mine-shaft-500 mb-7">
+        <h1 class="underline txt__2xl text-biscay-500 font-bold">
+          Клиенты о нас
+        </h1>
+        <p class="lg:pt-10 txt__base to-mine-shaft-500 mb-7">
           90% новых клиентов обратились к нам по рекомендации
         </p>
       </div>
@@ -1917,8 +1901,9 @@
         <div class="reviews_container">
           <div class="review pr-4">
             <img src="./img/both/Фото.png" alt="review" />
-            <h1 class="txt__2xl text-biscay-500 font-bold">Абрахам Прайс</h1>
-            <div class="h-0.5 w-44 sm:w-64 bg-cerise-500 mb-6 mt-1"></div>
+            <h1 class="underline txt__2xl text-biscay-500 font-bold">
+              Абрахам Прайс
+            </h1>
             <h1 class="txt__base text-mine-shaft-500 mb-5">
               Председатель правления АО "Bank"
             </h1>
@@ -1935,8 +1920,9 @@
           </div>
           <div class="review pr-4">
             <img src="./img/both/Фото.png" alt="review" />
-            <h1 class="txt__2xl text-biscay-500 font-bold">Абрахам Прайс</h1>
-            <div class="h-0.5 w-44 sm:w-64 bg-cerise-500 mb-6 mt-1"></div>
+            <h1 class="underline txt__2xl text-biscay-500 font-bold">
+              Абрахам Прайс
+            </h1>
             <h1 class="txt__base text-mine-shaft-500 mb-5">
               Председатель правления АО "Bank"
             </h1>
@@ -1953,8 +1939,9 @@
           </div>
           <div class="review pr-4">
             <img src="./img/both/Фото.png" alt="review" />
-            <h1 class="txt__2xl text-biscay-500 font-bold">Абрахам Прайс</h1>
-            <div class="h-0.5 w-44 sm:w-64 bg-cerise-500 mb-6 mt-1"></div>
+            <h1 class="underline txt__2xl text-biscay-500 font-bold">
+              Абрахам Прайс
+            </h1>
             <h1 class="txt__base text-mine-shaft-500 mb-5">
               Председатель правления АО "Bank"
             </h1>
@@ -1979,10 +1966,10 @@
             <div class="flex justify-between">
               <img src="./img/both/Фото.png" alt="review" />
               <div class="ml-6">
-                <h1 class="text-3xl text-biscay-500 font-bold">
+                <h1 class="underline text-3xl text-biscay-500 font-bold">
                   Абрахам Прайс
                 </h1>
-                <h2 class="text-2xl text-mine-shaft-500 mb-12 mt-7">
+                <h2 class="lg:pt-5 text-2xl text-mine-shaft-500 mb-12 mt-7">
                   Председатель правления АО "Bank"
                 </h2>
                 <p class="text-base text-dove-gray-500 mb-7">
@@ -2002,10 +1989,10 @@
             <div class="flex justify-between">
               <img src="./img/both/Фото.png" alt="review" />
               <div class="ml-6">
-                <h1 class="text-3xl text-biscay-500 font-bold">
+                <h1 class="underline text-3xl text-biscay-500 font-bold">
                   Абрахам Прайс
                 </h1>
-                <h2 class="text-2xl text-mine-shaft-500 mb-12 mt-7">
+                <h2 class="lg:pt-5 text-2xl text-mine-shaft-500 mb-12 mt-7">
                   Председатель правления АО "Bank"
                 </h2>
                 <p class="text-base text-dove-gray-500 mb-7">
@@ -2025,10 +2012,10 @@
             <div class="flex justify-between">
               <img src="./img/both/Фото.png" alt="review" />
               <div class="ml-6">
-                <h1 class="text-3xl text-biscay-500 font-bold">
+                <h1 class="underline text-3xl text-biscay-500 font-bold">
                   Абрахам Прайс
                 </h1>
-                <h2 class="text-2xl text-mine-shaft-500 mb-12 mt-7">
+                <h2 class="lg:pt-5 text-2xl text-mine-shaft-500 mb-12 mt-7">
                   Председатель правления АО "Bank"
                 </h2>
                 <p class="text-base text-dove-gray-500 mb-7">
@@ -2074,10 +2061,9 @@
       </div>
       <!-- ------------------------------- SOCIAL POSITION ------------------------------- -->
       <div class="px-4 lg:hidden">
-        <h1 class="txt__2xl text-biscay-500 uppercase font-bold">
+        <h1 class="underline txt__2xl text-biscay-500 uppercase font-bold">
           Социальная позиция
         </h1>
-        <div class="h-0.5 w-class-76 sm:w-64 bg-cerise-500 mb-6 mt-1"></div>
         <p class="text-base text-mine-shaft-500 mb-3">
           Наша компания хочет поднять привлекательность IT профессий и поэтому
           мы организовали движение «Силиконовая степь» для развития программных
@@ -2170,11 +2156,12 @@
         </div>
       </div>
       <div class="hidden lg:block lg:w-5/6 lg:mx-auto">
-        <h1 class="text-3xl text-biscay-500 uppercase font-bold">
+        <h1
+          class="underline text-3xl text-biscay-500 uppercase font-bold mb-20"
+        >
           Социальная позиция
         </h1>
-        <div class="h-0.5 sm:w-96 bg-cerise-500 mb-6 mt-1"></div>
-        <div class="flex">
+        <div class="flex lg:pt-10">
           <div class="w-1/2">
             <p>
               Наша компания хочет поднять привлекательность IT профессий и
@@ -2190,8 +2177,10 @@
                   uppercase
                   text-white
                   flex
-                  px-20
-                  py-4
+                  lg:px-10
+                  xl:px-16
+                  lg:pt-7
+                  xl:py-4
                   rounded-full
                   font-bold
                   text-base
@@ -2277,12 +2266,20 @@
         </div>
       </div>
       <div class="hidden trust__us lg:block lg:w-5/6 lg:mx-auto mt-64">
-        <h1 class="txt__2xl font-bold text-biscay-500">Нам доверяют</h1>
-        <div class="h-0.5 w-44 sm:w-56 bg-cerise-500 mb-6 mt-1"></div>
+        <h1 class="underline txt__2xl font-bold text-biscay-500 mb-8">
+          Нам доверяют
+        </h1>
       </div>
-      <div class="background lg:relative mb-16">
-        <div class="hidden lg:block lg:w-5/6 lg:mx-auto lg:absolute inset-x-0">
-          <div class="flex">
+      <div class="background lg:relative mb-16 w-screen">
+        <div
+          class="
+            hidden
+            w-screen
+            lg:block lg:w-5/6 lg:mx-auto lg:absolute
+            inset-x-0
+          "
+        >
+          <div class="flex w-5/6">
             <img src="./img/both/cisco-2.png" alt="cisco" />
             <img src="./img/both/ups.png" alt="ups" />
             <img src="./img/both/visa.png" alt="visa" />
@@ -2304,8 +2301,9 @@
 
       <!-- ------------------------------- TRUST US ------------------------------- -->
       <div class="trust__us px-4 lg:hidden">
-        <h1 class="txt__2xl font-bold text-biscay-500">Нам доверяют</h1>
-        <div class="h-0.5 w-44 sm:w-56 bg-cerise-500 mb-6 mt-1"></div>
+        <h1 class="underline txt__2xl font-bold text-biscay-500">
+          Нам доверяют
+        </h1>
       </div>
       <div class="flex justify-between lg:hidden">
         <img class="trust_width" src="./img/both/cisco-2.png" alt="cisco" />
@@ -2399,18 +2397,18 @@
     </footer>
 
     <footer class="hidden lg:block footer__menu">
-      <div class="lg:flex lg:w-5/6 lg:mx-auto">
-        <div>
+      <div class="lg:flex lg:w-5/6 lg:mx-auto pb-20">
+        <div class="mr-44">
           <div class="flex mt-20 mb-10">
-            <h1 class="mr-16">COMPANY</h1>
-            <p>
+            <h1 class="mr-16 text-2xl text-white font-bold">COMPANY</h1>
+            <p class="text-base text-cloud-500">
               Реализуем Вашу идею, подготовим план<br />
               и варианты решения
             </p>
           </div>
-          <h1 class="mb-12">Меню</h1>
+          <h1 class="mb-12 text-2xl text-white font-bold">Меню</h1>
           <div class="flex flex-row justify-between">
-            <div class="uppercase flex flex-col">
+            <div class="uppercase flex flex-col text-base text-cloud-500">
               <div class="mb-3">
                 <a href="#">о нас</a>
               </div>
@@ -2421,7 +2419,7 @@
                 <a href="#">услуги</a>
               </div>
             </div>
-            <div class="uppercase flex flex-col">
+            <div class="uppercase flex flex-col text-base text-cloud-500">
               <div class="mb-3">
                 <a href="#">решение</a>
               </div>
@@ -2432,7 +2430,7 @@
                 <a href="#">Этапы работы</a>
               </div>
             </div>
-            <div class="uppercase flex flex-col">
+            <div class="uppercase flex flex-col text-base text-cloud-500">
               <div class="mb-3">
                 <a href="#">Гарантии</a>
               </div>
@@ -2445,7 +2443,55 @@
             </div>
           </div>
         </div>
-        <div></div>
+        <div class="mt-20">
+          <div class="flex justify-around">
+            <div class="">
+              <h1 class="text-base text-white">email@email.com</h1>
+              <p class="text-base text-cloud-500 pr-20">ПН-ПТ 10:00 - 19:00</p>
+            </div>
+            <div class="">
+              <h1 class="text-base text-white">+7 (727) 000 00 00</h1>
+              <a class="text-base text-cloud-500 pr-20" href=""
+                >Обратный звонок</a
+              >
+            </div>
+            <div>
+              <p class="text-base text-white">
+                Казахстан, г. Алматы, пр. Абая, д. 777, блок 7,<br />
+                этаж 7. Вход с ул.Абая
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-between mt-28">
+            <div class="mt-2">
+              <div class="flex mt-1">
+                <img class="mr-2" src="./img/desktop/Иконка1.png" alt="icon" />
+                <a class="text-base text-white" href="">Заполнить бриф</a>
+              </div>
+              <div class="flex mt-1">
+                <img class="mr-2" src="./img/desktop/Иконка.png" alt="icon" />
+                <a class="text-base text-white" href=""
+                  >Заказать план реализации</a
+                >
+              </div>
+            </div>
+            <button
+              class="
+                btn
+                uppercase
+                text-white
+                px-7
+                py-5
+                rounded-full
+                font-bold
+                text-base
+                mt-4
+              "
+            >
+              Заказать консультацию
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="./js/slider.js"></script>
