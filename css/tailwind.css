@@ -11,11 +11,10 @@
   font-family: SF_Pro_Display;
 }
 .hamburger {
-  position: relative;
   display: block;
-  width: 35px;
+  width: 24px;
   cursor: pointer;
-
+  position: fixed;
   appearance: none;
   border: none;
   outline: none;
@@ -30,14 +29,15 @@
   height: 3px;
   background-color: #fff;
   transition: 0.4s;
-  margin: 6px 0;
+  margin: 4px 0;
   border-radius: 20%;
 }
+
 .hamburger.is-active::before {
-  transform: rotate(-45deg) translate(-11px, 1px);
+  transform: rotate(-45deg) translate(-4.5px, 3px);
 }
 .hamburger.is-active::after {
-  transform: rotate(45deg) translate(-11px, 1px);
+  transform: rotate(45deg) translate(-4.5px, -3px);
 }
 .hamburger.is-active .bar {
   opacity: 0;
@@ -527,12 +527,14 @@
   @apply border-b-2 border-cerise-500;
 }
 .popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  top: 0px;
-  left: 0px;
+  visibility: hidden;
+  z-index: 100;
+  @apply fixed inset-0 w-full h-full opacity-0;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
 }
 .popup_body {
   background: linear-gradient(
@@ -542,9 +544,18 @@
     rgba(53, 56, 103, 1) 100%
   );
 }
+
 .forheight {
   min-height: 56px;
 }
 .ta_height {
   min-height: 120px;
+}
+@media (min-width: 1024px) {
+  .ta_height {
+    min-height: 185px;
+  }
+  .ta_width {
+    min-width: 370px;
+  }
 }

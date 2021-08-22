@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="stylesheet" href="./css/builded.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -14,7 +14,7 @@
 
   <body class="sf_pro">
     <!-- ------------------------------- HEADER ------------------------------- -->
-    <header class="px-4 header lg:px-0">
+    <header id="main" class="px-4 header lg:px-0">
       <div class="flex justify-between pt-10 pb-7 lg:w-5/6 mx-auto">
         <h1 class="txt__base font-bold uppercase text-white pt-2">company</h1>
 
@@ -30,10 +30,23 @@
             <a class="text-base text-cloud-500" href="#">Обратный звонок</a>
           </div>
         </div>
-        <div class="z-50">
-          <button class="hamburger">
-            <div class="bar"></div>
-          </button>
+        <div class="z-50 relative w-10 h-10">
+          <div
+            class="
+              fixed
+              w-10
+              h-10
+              bg-cerise-900 bg-opacity-60
+              flex
+              justify-center
+              items-center
+              rounded-full
+            "
+          >
+            <button class="hamburger">
+              <div class="bar"></div>
+            </button>
+          </div>
         </div>
       </div>
       <div class="lg:hidden">
@@ -51,23 +64,25 @@
           src="./img/both/MacBook Pro.png"
           alt="macbook"
         />
-        <button
-          class="
-            btn
-            uppercase
-            text-white
-            m-auto
-            flex
-            px-20
-            py-4
-            rounded-full
-            font-bold
-            txt__sm
-            mt-8
-          "
-        >
-          Получить план
-        </button>
+        <a href="#popup">
+          <button
+            class="
+              btn
+              uppercase
+              text-white
+              m-auto
+              flex
+              px-20
+              py-4
+              rounded-full
+              font-bold
+              txt__sm
+              mt-8
+            "
+          >
+            Получить план
+          </button>
+        </a>
       </div>
       <div class="hidden lg:flex lg:w-5/6 mx-auto mt-20">
         <div class="mt-40">
@@ -80,21 +95,23 @@
             Реализуем Вашу идею, подготовим план и варианты<br />
             решения без увеличения стоимости в процессе разработки
           </p>
-          <button
-            class="
-              btn
-              uppercase
-              text-white
-              px-20
-              py-4
-              rounded-full
-              font-bold
-              txt__sm
-              mt-24
-            "
+          <a href="#popup"
+            ><button
+              class="
+                btn
+                uppercase
+                text-white
+                px-20
+                py-4
+                rounded-full
+                font-bold
+                txt__sm
+                mt-24
+              "
+            >
+              Получить план
+            </button></a
           >
-            Получить план
-          </button>
         </div>
         <img
           class="lg: w-144 xl:w-180 h-auto mt-40"
@@ -123,16 +140,16 @@
       <h1 class="txt__base font-bold pt-12 menu-word">МЕНЮ</h1>
 
       <div class="menu-elements">
-        <a class="txt__base mb-2 lg:mb-4 w-max" href="#">Главная</a>
-        <a class="txt__base mb-2 lg:mb-4" href="#">О нас</a>
-        <a class="txt__base mb-2 lg:mb-4" href="#">Команда</a>
-        <a class="txt__base mb-2 lg:mb-4" href="#">Услуги</a>
-        <a class="txt__base mb-2 lg:mb-4" href="#">Решение</a>
-        <a class="txt__base mb-2 lg:mb-4" href="#">Результаты</a>
-        <a class="txt__base mb-2 lg:mb-4" href="#">Этапы работы</a>
-        <a class="txt__base mb-2 lg:mb-4" href="#">Гарантии</a>
-        <a class="txt__base mb-2 lg:mb-4" href="#">Отзывы</a>
-        <a class="txt__base mb-2 lg:mb-4" href="#">Контакты</a>
+        <a class="txt__base mb-2 lg:mb-4 w-max" href="#main">Главная</a>
+        <a class="txt__base mb-2 lg:mb-4" href="#about-section">О нас</a>
+        <a class="txt__base mb-2 lg:mb-4" href="#team">Команда</a>
+        <a class="txt__base mb-2 lg:mb-4" href="#services">Услуги</a>
+        <a class="txt__base mb-2 lg:mb-4" href="#decision">Решение</a>
+        <a class="txt__base mb-2 lg:mb-4" href="#results">Результаты</a>
+        <a class="txt__base mb-2 lg:mb-4" href="#stages">Этапы работы</a>
+        <a class="txt__base mb-2 lg:mb-4" href="#guarantee">Гарантии</a>
+        <a class="txt__base mb-2 lg:mb-4" href="#reviews">Отзывы</a>
+        <a class="txt__base mb-2 lg:mb-4" href="#footer">Контакты</a>
       </div>
     </nav>
     <!-- ------------------------------- MAIN CONTENT ------------------------------- -->
@@ -181,9 +198,11 @@
         </div>
       </div>
       <!-- ------------------------------- ABOUT ------------------------------- -->
-      <div class="about__us px-4 lg:px-0">
+      <div id="about-section" class="about__us px-4 lg:px-0">
         <div class="lg:w-5/6 lg:mx-auto">
-          <h1 class="underline uppercase text-biscay-500 font-bold txt__2xl">
+          <h1
+            class="underline mb-6 uppercase text-biscay-500 font-bold txt__2xl"
+          >
             о нас
           </h1>
           <p class="lg:pt-10 txt__base text-dove-gray-500 lg:w-5/12">
@@ -332,9 +351,19 @@
         </div>
       </div>
 
-      <div class="px-4 lg:w-5/6 lg:mx-auto lg:px-0">
+      <div id="team" class="px-4 lg:w-5/6 lg:mx-auto lg:px-0">
         <div class="">
-          <h1 class="underline uppercase txt__2xl text-biscay-500 font-bold">
+          <h1
+            class="
+              underline
+              mb-6
+              lg:mb-0
+              uppercase
+              txt__2xl
+              text-biscay-500
+              font-bold
+            "
+          >
             Наша команда
           </h1>
           <p
@@ -350,7 +379,7 @@
         <div class="slides-container">
           <div class="slides pr-4 sm:pl-32 md:pl-40">
             <img src="./img/both/Фото.png" alt="photo" />
-            <h1 class="underline txt__2xl font-bold text-biscay-500 pt-8">
+            <h1 class="underline mb-6 txt__2xl font-bold text-biscay-500 pt-8">
               Яров Сергей
             </h1>
             <h2 class="txt__base text-mine-shaft-500 pb-6">
@@ -362,7 +391,7 @@
           </div>
           <div class="slides pr-4 sm:pl-32 md:pl-40">
             <img src="./img/both/Фото-1.png" alt="photo" />
-            <h1 class="underline txt__2xl font-bold text-biscay-500 pt-8">
+            <h1 class="underline mb-6 txt__2xl font-bold text-biscay-500 pt-8">
               Кравц Эдгар
             </h1>
             <h2 class="txt__base text-mine-shaft-500 pb-6">
@@ -375,7 +404,7 @@
           </div>
           <div class="slides pr-4 sm:pl-32 md:pl-40">
             <img src="./img/both/Фото-2.png" alt="photo" />
-            <h1 class="underline txt__2xl font-bold text-biscay-500 pt-8">
+            <h1 class="underline mb-6 txt__2xl font-bold text-biscay-500 pt-8">
               Кравц Эдгар
             </h1>
             <h2 class="txt__base text-mine-shaft-500 pb-6">
@@ -388,7 +417,7 @@
           </div>
           <div class="slides pr-4 sm:pl-32 md:pl-40">
             <img src="./img/both/Фото-3.png" alt="photo" />
-            <h1 class="underline txt__2xl font-bold text-biscay-500 pt-8">
+            <h1 class="underline mb-6 txt__2xl font-bold text-biscay-500 pt-8">
               Измайлов Малик
             </h1>
             <h2 class="txt__base text-mine-shaft-500 pb-6">
@@ -466,9 +495,19 @@
       </div>
       <!-- ------------------------------- OUR SERVICES ------------------------------- -->
 
-      <div class="lg:w-5/6 mx-auto mb-16">
+      <div id="services" class="lg:w-5/6 mx-auto mb-16">
         <div class="px-4 lg:px-0 mb-7">
-          <h1 class="underline uppercase txt__2xl text-biscay-500 font-bold">
+          <h1
+            class="
+              underline
+              mb-6
+              lg:mb-0
+              uppercase
+              txt__2xl
+              text-biscay-500
+              font-bold
+            "
+          >
             Наши услуги
           </h1>
           <p class="lg:pt-10 txt__base text-mine-shaft-500">
@@ -636,23 +675,25 @@
                     и еще 18 видов мобильных приложений
                   </h1>
                 </div>
-                <button
-                  class="
-                    btn
-                    uppercase
-                    text-white
-                    m-auto
-                    flex
-                    px-8
-                    py-4
-                    rounded-full
-                    font-bold
-                    text-base
-                    mt-8
-                  "
+                <a href="#popup"
+                  ><button
+                    class="
+                      btn
+                      uppercase
+                      text-white
+                      m-auto
+                      flex
+                      px-8
+                      py-4
+                      rounded-full
+                      font-bold
+                      text-base
+                      mt-8
+                    "
+                  >
+                    Получить Предложение
+                  </button></a
                 >
-                  Получить Предложение
-                </button>
               </div>
               <div class="hidden lg:block w-1/2">
                 <!--IMAGE  -->
@@ -708,23 +749,25 @@
                     и еще 10 направлений
                   </h1>
                 </div>
-                <button
-                  class="
-                    btn
-                    uppercase
-                    text-white
-                    m-auto
-                    flex
-                    px-8
-                    py-4
-                    rounded-full
-                    font-bold
-                    text-base
-                    mt-8
-                  "
-                >
-                  Получить Предложение
-                </button>
+                <a href="#popup">
+                  <button
+                    class="
+                      btn
+                      uppercase
+                      text-white
+                      m-auto
+                      flex
+                      px-8
+                      py-4
+                      rounded-full
+                      font-bold
+                      text-base
+                      mt-8
+                    "
+                  >
+                    Получить Предложение
+                  </button>
+                </a>
               </div>
               <div class="hidden lg:block w-1/2">
                 <!--IMAGE  -->
@@ -780,23 +823,25 @@
                     показателей — KPI
                   </h1>
                 </div>
-                <button
-                  class="
-                    btn
-                    uppercase
-                    text-white
-                    m-auto
-                    flex
-                    px-8
-                    py-4
-                    rounded-full
-                    font-bold
-                    text-base
-                    mt-8
-                  "
+                <a href="#popup"
+                  ><button
+                    class="
+                      btn
+                      uppercase
+                      text-white
+                      m-auto
+                      flex
+                      px-8
+                      py-4
+                      rounded-full
+                      font-bold
+                      text-base
+                      mt-8
+                    "
+                  >
+                    Получить Предложение
+                  </button></a
                 >
-                  Получить Предложение
-                </button>
               </div>
               <div class="hidden lg:block w-1/2">
                 <!--IMAGE  -->
@@ -842,23 +887,25 @@
                     И еще 7 видов порталов
                   </h1>
                 </div>
-                <button
-                  class="
-                    btn
-                    uppercase
-                    text-white
-                    m-auto
-                    flex
-                    px-8
-                    py-4
-                    rounded-full
-                    font-bold
-                    text-base
-                    mt-8
-                  "
-                >
-                  Получить Предложение
-                </button>
+                <a href="#popup">
+                  <button
+                    class="
+                      btn
+                      uppercase
+                      text-white
+                      m-auto
+                      flex
+                      px-8
+                      py-4
+                      rounded-full
+                      font-bold
+                      text-base
+                      mt-8
+                    "
+                  >
+                    Получить Предложение
+                  </button>
+                </a>
               </div>
               <div class="hidden lg:block w-1/2">
                 <!--IMAGE  -->
@@ -908,23 +955,25 @@
                     И еще 46 видов корпоративных систем
                   </h1>
                 </div>
-                <button
-                  class="
-                    btn
-                    uppercase
-                    text-white
-                    m-auto
-                    flex
-                    px-8
-                    py-4
-                    rounded-full
-                    font-bold
-                    text-base
-                    mt-8
-                  "
-                >
-                  Получить Предложение
-                </button>
+                <a href="#popup">
+                  <button
+                    class="
+                      btn
+                      uppercase
+                      text-white
+                      m-auto
+                      flex
+                      px-8
+                      py-4
+                      rounded-full
+                      font-bold
+                      text-base
+                      mt-8
+                    "
+                  >
+                    Получить Предложение
+                  </button>
+                </a>
               </div>
               <div class="hidden lg:block w-1/2">
                 <!--IMAGE  -->
@@ -978,23 +1027,25 @@
                     помощью BPM
                   </h1>
                 </div>
-                <button
-                  class="
-                    btn
-                    uppercase
-                    text-white
-                    m-auto
-                    flex
-                    px-8
-                    py-4
-                    rounded-full
-                    font-bold
-                    text-base
-                    mt-8
-                  "
-                >
-                  Получить Предложение
-                </button>
+                <a href="#popup">
+                  <button
+                    class="
+                      btn
+                      uppercase
+                      text-white
+                      m-auto
+                      flex
+                      px-8
+                      py-4
+                      rounded-full
+                      font-bold
+                      text-base
+                      mt-8
+                    "
+                  >
+                    Получить Предложение
+                  </button>
+                </a>
               </div>
               <div class="hidden lg:block w-1/2">
                 <!--IMAGE  -->
@@ -1045,8 +1096,9 @@
           "
         ></div>
       </div>
+      <div id="decision"></div>
       <div class="software__box px-4 lg:hidden">
-        <h1 class="underline txt__2xl text-biscay-500 font-bold w-max">
+        <h1 class="underline mb-6 txt__2xl text-biscay-500 font-bold w-max">
           Готовое решение <br class="sm:hidden" />
           Software Box
         </h1>
@@ -1147,23 +1199,25 @@
           </p>
         </div>
         <img class="m-auto" src="./img/both/Software.png" alt="Software" />
-        <button
-          class="
-            btn
-            uppercase
-            text-white
-            m-auto
-            flex
-            px-8
-            py-4
-            rounded-full
-            font-bold
-            text-base
-            mt-8
-          "
+        <a href="#popup"
+          ><button
+            class="
+              btn
+              uppercase
+              text-white
+              m-auto
+              flex
+              px-8
+              py-4
+              rounded-full
+              font-bold
+              text-base
+              mt-8
+            "
+          >
+            Получить Software box
+          </button></a
         >
-          Получить Software box
-        </button>
       </div>
       <div class="hidden lg:block lg:w-5/6 lg:mx-auto">
         <h1 class="underline text-3xl text-biscay-500 font-bold">
@@ -1281,25 +1335,28 @@
             </div>
           </div>
         </div>
-        <button
-          class="
-            btn
-            uppercase
-            text-white
-            m-auto
-            flex
-            px-8
-            py-4
-            rounded-full
-            font-bold
-            text-base
-            mt-8
-          "
+        <a href="#popup"
+          ><button
+            class="
+              btn
+              uppercase
+              text-white
+              m-auto
+              flex
+              px-8
+              py-4
+              rounded-full
+              font-bold
+              text-base
+              mt-8
+            "
+          >
+            Получить Software box
+          </button></a
         >
-          Получить Software box
-        </button>
       </div>
       <!-- ------------------------------- RESULTS ------------------------------- -->
+      <div id="results"></div>
       <div class="results px-4 lg:px-0 lg:w-5/6 lg:mx-auto">
         <h1
           class="uppercase txt__2xl lg:text-3xl font-bold text-biscay-500 pt-32"
@@ -1613,8 +1670,9 @@
         />
       </div>
       <!-- ------------------------------- STAGES OF WORK ------------------------------- -->
+      <div id="stages"></div>
       <div class="lg:w-5/6 px-4 mx-auto stages_back lg:pb-7">
-        <h1 class="underline txt__2xl text-biscay-500 font-bold">
+        <h1 class="underline mb-6 txt__2xl text-biscay-500 font-bold">
           Этапы работы
         </h1>
         <p class="lg:pt-10 txt__base text-mine-shaft-500">
@@ -1805,8 +1863,19 @@
         ></div>
       </div>
       <!-- ------------------------------- OUR GUARANTEES ------------------------------- -->
+      <div id="guarantee"></div>
       <div class="mt-28 px-4 lg:w-5/6 lg:mx-auto">
-        <h1 class="underline uppercase font-bold text-biscay-500 txt__2xl">
+        <h1
+          class="
+            underline
+            mb-6
+            lg:mb-0
+            uppercase
+            font-bold
+            text-biscay-500
+            txt__2xl
+          "
+        >
           Наши Гарантии
         </h1>
         <p class="lg:pt-10 txt__base text-mine-shaft-500 mb-24">
@@ -1988,8 +2057,9 @@
         />
       </div>
       <!-- ------------------------------- REVIEWS SLIDER ------------------------------- -->
+      <div id="reviews"></div>
       <div class="px-4 lg:w-5/6 lg:mx-auto lg:px-0">
-        <h1 class="underline txt__2xl text-biscay-500 font-bold">
+        <h1 class="underline mb-6 lg:mb-0 txt__2xl text-biscay-500 font-bold">
           Клиенты о нас
         </h1>
         <p class="lg:pt-10 txt__base to-mine-shaft-500 mb-7">
@@ -2000,7 +2070,7 @@
         <div class="reviews_container">
           <div class="review pr-4">
             <img src="./img/both/Фото.png" alt="review" />
-            <h1 class="underline txt__2xl text-biscay-500 font-bold">
+            <h1 class="underline mb-6 txt__2xl text-biscay-500 font-bold">
               Абрахам Прайс
             </h1>
             <h1 class="txt__base text-mine-shaft-500 mb-5">
@@ -2019,7 +2089,7 @@
           </div>
           <div class="review pr-4">
             <img src="./img/both/Фото.png" alt="review" />
-            <h1 class="underline txt__2xl text-biscay-500 font-bold">
+            <h1 class="underline mb-6 txt__2xl text-biscay-500 font-bold">
               Абрахам Прайс
             </h1>
             <h1 class="txt__base text-mine-shaft-500 mb-5">
@@ -2038,7 +2108,7 @@
           </div>
           <div class="review pr-4">
             <img src="./img/both/Фото.png" alt="review" />
-            <h1 class="underline txt__2xl text-biscay-500 font-bold">
+            <h1 class="underline mb-6 txt__2xl text-biscay-500 font-bold">
               Абрахам Прайс
             </h1>
             <h1 class="txt__base text-mine-shaft-500 mb-5">
@@ -2157,27 +2227,39 @@
           Быстро включимся в проект. Для начала работы <br />
           нам достаточно интервью
         </h1>
-        <button
-          class="
-            btn
-            uppercase
-            text-white
-            m-auto
-            flex
-            px-16
-            py-5
-            rounded-full
-            font-bold
-            text-base
-            mt-8
-          "
-        >
-          начать работу
-        </button>
+        <a href="#popup">
+          <button
+            class="
+              btn
+              uppercase
+              text-white
+              m-auto
+              flex
+              px-16
+              py-5
+              rounded-full
+              font-bold
+              text-base
+              mt-8
+            "
+          >
+            начать работу
+          </button>
+        </a>
       </div>
       <!-- ------------------------------- SOCIAL POSITION ------------------------------- -->
       <div class="px-4 lg:hidden">
-        <h1 class="underline txt__2xl text-biscay-500 uppercase font-bold">
+        <h1
+          class="
+            underline
+            mb-6
+            lg:mb-0
+            txt__2xl
+            text-biscay-500
+            uppercase
+            font-bold
+          "
+        >
           Социальная позиция
         </h1>
         <p class="text-base text-mine-shaft-500 mb-3">
@@ -2239,23 +2321,25 @@
             </div>
           </div>
         </div>
-        <button
-          class="
-            btn
-            uppercase
-            m-auto
-            text-white
-            flex
-            px-20
-            py-4
-            rounded-full
-            font-bold
-            text-base
-            mt-8
-          "
+        <a href="#popup"
+          ><button
+            class="
+              btn
+              uppercase
+              m-auto
+              text-white
+              flex
+              px-20
+              py-4
+              rounded-full
+              font-bold
+              text-base
+              mt-8
+            "
+          >
+            Связаться
+          </button></a
         >
-          Связаться
-        </button>
         <div class="pt-11">
           <h1 class="text-base text-center pb-3">Мы в соц. сетях</h1>
           <div class="flex flex-row object-cover justify-center">
@@ -2304,23 +2388,25 @@
               хотите стать участником – свяжитесь с нами.
             </p>
             <div class="flex pt-16">
-              <button
-                class="
-                  btn
-                  uppercase
-                  text-white
-                  flex
-                  lg:px-10
-                  xl:px-16
-                  lg:pt-7
-                  xl:py-4
-                  rounded-full
-                  font-bold
-                  text-base
-                "
+              <a href="#popup"
+                ><button
+                  class="
+                    btn
+                    uppercase
+                    text-white
+                    flex
+                    lg:px-10
+                    xl:px-16
+                    lg:pt-7
+                    xl:py-4
+                    rounded-full
+                    font-bold
+                    text-base
+                  "
+                >
+                  Связаться
+                </button></a
               >
-                Связаться
-              </button>
               <p class="pl-5 pt-8">Мы в соц. сетях</p>
               <div
                 class="
@@ -2434,7 +2520,7 @@
 
       <!-- ------------------------------- TRUST US ------------------------------- -->
       <div class="trust__us px-4 lg:hidden">
-        <h1 class="underline txt__2xl font-bold text-biscay-500">
+        <h1 class="underline mb-6 txt__2xl font-bold text-biscay-500">
           Нам доверяют
         </h1>
       </div>
@@ -2452,6 +2538,7 @@
       </div>
     </section>
     <!-- ------------------------------- FOOTER ------------------------------- -->
+    <div id="footer"></div>
     <footer class="lg:hidden footer__menu pb-16">
       <div class="px-4 pt-11 pb-12">
         <h1 class="txt__base font-bold text-white">Меню</h1>
@@ -2487,24 +2574,26 @@
           </div>
           <div class="flex text-white">
             <img class="mr-2" src="./img/desktop/Иконка.png" alt="icon" />
-            <a href="#">Заказать план реализации</a>
+            <a href="#popup">Заказать план реализации</a>
           </div>
         </div>
-        <button
-          class="
-            btn
-            uppercase
-            text-white
-            px-4
-            py-5
-            rounded-full
-            font-bold
-            text-base
-            mt-8
-          "
+        <a href="#popup"
+          ><button
+            class="
+              btn
+              uppercase
+              text-white
+              px-4
+              py-5
+              rounded-full
+              font-bold
+              text-base
+              mt-8
+            "
+          >
+            Заказать консультацию
+          </button></a
         >
-          Заказать консультацию
-        </button>
       </div>
       <div class="contacts px-4 pb-11">
         <div class="pb-8">
@@ -2603,76 +2692,94 @@
               </div>
               <div class="flex mt-1">
                 <img class="mr-2" src="./img/desktop/Иконка.png" alt="icon" />
-                <a class="text-base text-white" href=""
+                <a class="text-base text-white" href="#popup"
                   >Заказать план реализации</a
                 >
               </div>
             </div>
-            <button
-              class="
-                btn
-                uppercase
-                text-white
-                px-7
-                py-5
-                rounded-full
-                font-bold
-                text-base
-                mt-4
-              "
+            <a href="#popup"
+              ><button
+                class="
+                  btn
+                  uppercase
+                  text-white
+                  px-7
+                  py-5
+                  rounded-full
+                  font-bold
+                  text-base
+                  mt-4
+                "
+              >
+                Заказать консультацию
+              </button></a
             >
-              Заказать консультацию
-            </button>
           </div>
         </div>
       </div>
     </footer>
-    <div id="popup" class="popup px-4">
-      <div class="popup_body px-12 py-12">
+    <div id="popup" class="popup pt-8 lg:pt-20">
+      <div
+        class="
+          popup_body
+          w-11/12
+          sm:w-96
+          lg:w-168
+          xl:w-196
+          h-max
+          lg:h-128
+          mx-auto
+          px-10
+          py-12
+          rounded-xl
+        "
+      >
         <div class="popup_content">
-          <h1 class="text-base font-bold text-white mb-5">
+          <h1 class="text-base font-bold text-white mb-4">
             Подберем решение, озвучим стоимость и сроки
           </h1>
-          <h2 class="text-sm text-cloud-500 mb-5">
+          <h2 class="text-sm text-cloud-500 mb-4">
             Заполните форму или просто напишите нам на <a href="#">почту</a>.
           </h2>
-          <div>
-            <div>
+          <div class="lg:flex lg:justify-between lg:gap-x-6">
+            <div class="lg:w-1/2">
               <input class="w-full rounded-3xl mb-2 forheight" type="text" />
               <input class="w-full rounded-3xl mb-2 forheight" type="text" />
               <input class="w-full rounded-3xl mb-2 forheight" type="text" />
             </div>
-            <div>
+            <div class="lg:w-1/2">
               <textarea
-                class="w-full ta_height mb-12 rounded-3xl"
+                class="w-full ta_height mb-10 rounded-3xl"
                 name=""
                 id=""
               >
               </textarea>
             </div>
           </div>
-          <button
-            class="
-              btn
-              uppercase
-              text-white
-              flex
-              w-full
-              mx-auto
-              px-7
-              py-5
-              rounded-full
-              font-bold
-              text-base
-            "
-          >
-            Отправить сообщение
-          </button>
-          <a href="#" class="popup_close">x</a>
+          <div class="flex justify-center">
+            <button
+              class="
+                btn
+                uppercase
+                text-white
+                w-max
+                mx-auto
+                px-7
+                py-5
+                rounded-full
+                font-bold
+                text-base text-center
+              "
+            >
+              Отправить сообщение
+            </button>
+          </div>
+          <a href="##" class="popup_close flex items-center justify-center mt-7"
+            ><img src="./img/mobile/Крестик.png" alt=""
+          /></a>
         </div>
       </div>
     </div>
-    <script src="./js/jquery.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/menuBurger.js"></script>
     <script src="./js/serviceSlider.js"></script>

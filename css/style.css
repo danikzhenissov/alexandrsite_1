@@ -1,4 +1,5 @@
-body , html{
+body,
+html {
   position: absolute;
   top: 0;
   left: 0;
@@ -6,6 +7,7 @@ body , html{
   bottom: 0;
   width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .header {
   background-image: url(../img/both/Шапка.png);
@@ -54,5 +56,19 @@ body , html{
 }
 
 .gradient-milky {
-  background-image: linear-gradient(to top right, rgb(255, 255, 255), rgb(250, 239, 246), rgb(246, 224, 237), rgb(241, 208, 228), rgb(236, 193, 219), rgb(232, 177, 210), rgb(227, 162, 201), rgb(223, 146, 192), rgb(218, 131, 183), rgb(213, 115, 174), rgb(209, 100, 165), rgb(204, 84, 156));
+  background-image: linear-gradient(
+    to top right,
+    rgb(255, 255, 255),
+    rgb(250, 239, 246),
+    rgb(246, 224, 237),
+    rgb(241, 208, 228),
+    rgb(236, 193, 219),
+    rgb(232, 177, 210),
+    rgb(227, 162, 201),
+    rgb(223, 146, 192),
+    rgb(218, 131, 183),
+    rgb(213, 115, 174),
+    rgb(209, 100, 165),
+    rgb(204, 84, 156)
+  );
 }
