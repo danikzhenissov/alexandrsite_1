@@ -1,3 +1,11 @@
+@font-face {
+  font-family: SF_Pro_Display;
+  src: url("../assets/fonts/SF-Pro-Display-Medium.otf");
+}
+
+.sf_pro {
+  font-family: SF_Pro_Display;
+}
 body,
 html {
   position: absolute;
@@ -8,6 +16,7 @@ html {
   width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: SF_Pro_Display;
 }
 .header {
   background-image: url(../img/both/Шапка.png);

@@ -115,7 +115,7 @@
         </div>
         <img
           class="lg: w-144 xl:w-180 h-auto mt-40"
-          src="./img/desktop/MacBook Pro.png"
+          src="./img/desktop/MacBook Pro.webp"
           alt="macbook"
         />
       </div>
@@ -216,7 +216,7 @@
       <div class="lg:flex lg:justify-between ipad_width lg:w-5/6 lg:mx-auto">
         <img
           class="lg:w-1/2 lg:h-auto"
-          src="./img/desktop/Мокап.png"
+          src="./img/desktop/Мокап.webp"
           alt="ipad"
         />
         <div class="lg:w-1/2 px-4 pb-11 lg:pt-16">
@@ -1281,7 +1281,7 @@
           <div>
             <img
               class="m-auto size_software mb-12"
-              src="./img/desktop/Software.png"
+              src="./img/desktop/Software.webp"
               alt="Software"
             />
           </div>
@@ -1653,7 +1653,7 @@
               <div class="w-1/2 flex items-center pt-5 pl-5">
                 <img
                   class="h-auto xl:mt-20"
-                  src="./img/desktop/ipad_buble.png"
+                  src="./img/desktop/ipad_buble.webp"
                   alt="ipad"
                 />
               </div>
@@ -1817,21 +1817,23 @@
             </div>
           </div>
         </div>
-        <button
-          class="
-            btn
-            txt__sm
-            text-white
-            m-auto
-            flex
-            px-16
-            py-5
-            rounded-full
-            font-bold
-          "
-        >
-          ЗАПОЛНИТЬ БРИФ
-        </button>
+        <a href="./assets/download.docx" download="бриф">
+          <button
+            class="
+              btn
+              txt__sm
+              text-white
+              m-auto
+              flex
+              px-16
+              py-5
+              rounded-full
+              font-bold
+            "
+          >
+            ЗАПОЛНИТЬ БРИФ
+          </button>
+        </a>
       </div>
       <div class="relative">
         <div
@@ -2236,7 +2238,7 @@
               m-auto
               flex
               px-16
-              py-5
+              py-4
               rounded-full
               font-bold
               text-base
@@ -2554,23 +2556,23 @@
           "
         >
           <div class="flex flex-col">
-            <a class="pb-3" href="#">о нас</a>
-            <a class="pb-3" href="#">команда</a>
-            <a class="pb-3" href="#">услуги</a>
-            <a class="pb-3" href="#">решение</a>
-            <a class="pb-3" href="#">Результаты</a>
+            <a class="pb-3" href="#about-section">о нас</a>
+            <a class="pb-3" href="#team">команда</a>
+            <a class="pb-3" href="#services">услуги</a>
+            <a class="pb-3" href="#decision">решение</a>
+            <a class="pb-3" href="#results">Результаты</a>
           </div>
           <div class="flex flex-col">
-            <a class="pb-3" href="#">Этапы работы</a>
-            <a class="pb-3" href="#">Гарантии</a>
-            <a class="pb-3" href="#">Отзывы</a>
-            <a class="pb-3" href="#">Контакты</a>
+            <a class="pb-3" href="#stages">Этапы работы</a>
+            <a class="pb-3" href="#guarantee">Гарантии</a>
+            <a class="pb-3" href="#reviews">Отзывы</a>
+            <a class="pb-3" href="#footer">Контакты</a>
           </div>
         </div>
         <div>
           <div class="flex text-white">
             <img class="mr-2" src="./img/desktop/Иконка1.png" alt="icon" />
-            <a href="#">Заполнить бриф</a>
+            <a href="./assets/download.docx" download="Бриф">Заполнить бриф</a>
           </div>
           <div class="flex text-white">
             <img class="mr-2" src="./img/desktop/Иконка.png" alt="icon" />
@@ -2632,35 +2634,35 @@
           <div class="flex flex-row justify-between">
             <div class="uppercase flex flex-col text-base text-cloud-500">
               <div class="mb-3">
-                <a href="#">о нас</a>
+                <a href="#about-section">о нас</a>
               </div>
               <div class="mb-3">
-                <a href="#">команда</a>
+                <a href="#team">команда</a>
               </div>
               <div>
-                <a href="#">услуги</a>
+                <a href="#services">услуги</a>
               </div>
             </div>
             <div class="uppercase flex flex-col text-base text-cloud-500">
               <div class="mb-3">
-                <a href="#">решение</a>
+                <a href="#decision">решение</a>
               </div>
               <div class="mb-3">
-                <a href="#">Результаты</a>
+                <a href="#results">Результаты</a>
               </div>
               <div>
-                <a href="#">Этапы работы</a>
+                <a href="#stages">Этапы работы</a>
               </div>
             </div>
             <div class="uppercase flex flex-col text-base text-cloud-500">
               <div class="mb-3">
-                <a href="#">Гарантии</a>
+                <a href="#guarantee">Гарантии</a>
               </div>
               <div class="mb-3">
-                <a href="#">Отзывы</a>
+                <a href="#reviews">Отзывы</a>
               </div>
               <div>
-                <a href="#">Контакты</a>
+                <a href="#footer">Контакты</a>
               </div>
             </div>
           </div>
@@ -2673,7 +2675,10 @@
             </div>
             <div class="">
               <h1 class="text-base text-white">+7 (727) 000 00 00</h1>
-              <a class="text-base text-cloud-500 pr-20" href=""
+              <a
+                class="text-base text-cloud-500 pr-20"
+                href="./assets/download.docx"
+                download
                 >Обратный звонок</a
               >
             </div>
@@ -2688,7 +2693,12 @@
             <div class="mt-2">
               <div class="flex mt-1">
                 <img class="mr-2" src="./img/desktop/Иконка1.png" alt="icon" />
-                <a class="text-base text-white" href="">Заполнить бриф</a>
+                <a
+                  class="text-base text-white"
+                  href="./assets/download.docx"
+                  download="Бриф"
+                  >Заполнить бриф</a
+                >
               </div>
               <div class="flex mt-1">
                 <img class="mr-2" src="./img/desktop/Иконка.png" alt="icon" />
@@ -2718,7 +2728,7 @@
         </div>
       </div>
     </footer>
-    <div id="popup" class="popup pt-8 lg:pt-20">
+    <div id="popup" class="popup pt-5 lg:pt-20">
       <div
         class="
           popup_body
@@ -2730,30 +2740,43 @@
           lg:h-128
           mx-auto
           px-10
-          py-12
+          py-4
+          lg:pt-6
           rounded-xl
         "
       >
         <div class="popup_content">
-          <h1 class="text-base font-bold text-white mb-4">
+          <h1 class="text-base font-bold text-white mb-2 lg:mb-4">
             Подберем решение, озвучим стоимость и сроки
           </h1>
-          <h2 class="text-sm text-cloud-500 mb-4">
+          <h2 class="text-sm text-cloud-500 mb-2 lg:mb-4">
             Заполните форму или просто напишите нам на <a href="#">почту</a>.
           </h2>
-          <div class="lg:flex lg:justify-between lg:gap-x-6">
+          <div class="lg:flex lg:justify-between lg:gap-x-6 lg:my-4">
             <div class="lg:w-1/2">
-              <input class="w-full rounded-3xl mb-2 forheight" type="text" />
-              <input class="w-full rounded-3xl mb-2 forheight" type="text" />
-              <input class="w-full rounded-3xl mb-2 forheight" type="text" />
+              <input
+                placeholder="Имя"
+                class="w-full rounded-full mb-2 forheight pl-4"
+                type="text"
+              />
+              <input
+                placeholder="Телефон"
+                class="w-full rounded-full mb-2 forheight pl-4"
+                type="text"
+              />
+              <input
+                placeholder="Email"
+                class="w-full rounded-full mb-2 forheight pl-4"
+                type="text"
+              />
             </div>
             <div class="lg:w-1/2">
               <textarea
-                class="w-full ta_height mb-10 rounded-3xl"
+                placeholder="Несколько слов о проекте"
+                class="w-full ta_height mb-4 rounded-3xl pl-4 pt-2"
                 name=""
                 id=""
-              >
-              </textarea>
+              ></textarea>
             </div>
           </div>
           <div class="flex justify-center">
@@ -2765,7 +2788,8 @@
                 w-max
                 mx-auto
                 px-7
-                py-5
+                py-4
+                lg:py-5
                 rounded-full
                 font-bold
                 text-base text-center
@@ -2774,7 +2798,9 @@
               Отправить сообщение
             </button>
           </div>
-          <a href="##" class="popup_close flex items-center justify-center mt-7"
+          <a
+            href="##"
+            class="popup_close flex items-center justify-center mt-4 lg:mt-7"
             ><img src="./img/mobile/Крестик.png" alt=""
           /></a>
         </div>

@@ -27859,16 +27859,6 @@ video {
   content: none;
 }
 
-@font-face {
-  font-family: SF_Pro_Display;
-
-  src: url("../assets/fonts/SF-Compact-Display-Medium.otf");
-}
-
-.sf_pro {
-  font-family: SF_Pro_Display;
-}
-
 .hamburger {
   display: block;
   width: 24px;

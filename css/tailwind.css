@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: SF_Pro_Display;
-  src: url("../assets/fonts/SF-Compact-Display-Medium.otf");
-}
-
-.sf_pro {
-  font-family: SF_Pro_Display;
-}
 .hamburger {
   display: block;
   width: 24px;
@@ -435,7 +427,7 @@
 }
 @media (min-width: 1024px) {
   .footer__menu {
-    background-image: url(../img/desktop/footer_back.png);
+    background-image: url(../img/desktop/footer_back.webp);
     background-size: cover;
   }
 }
@@ -544,13 +536,15 @@
     rgba(53, 56, 103, 1) 100%
   );
 }
+@media (max-width: 1024px) {
+  .forheight {
+    max-height: 30px;
+  }
+  .ta_height {
+    max-height: 70px;
+  }
+}
 
-.forheight {
-  min-height: 56px;
-}
-.ta_height {
-  min-height: 120px;
-}
 @media (min-width: 1024px) {
   .ta_height {
     min-height: 185px;
@@ -558,4 +552,7 @@
   .ta_width {
     min-width: 370px;
   }
+}
+.ta_height {
+  max-height: 110px;
 }
